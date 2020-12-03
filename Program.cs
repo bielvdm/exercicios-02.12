@@ -2,7 +2,7 @@
 
 namespace exercicios_02._12
 {
-    class Program
+    class Program : aluno
     {
         static void Main(string[] args)
         {
@@ -39,15 +39,8 @@ namespace exercicios_02._12
             Console.WriteLine($"Idade: {aluno1.idade}");
             Console.WriteLine($"RG: {aluno1.RG}");
             Console.WriteLine($"Média do aluno: {aluno1.mediaFinal}");
-            System.Console.WriteLine(aluno1.bolsista);
-            Console.WriteLine($"Mensalidade total: {mensalidadeBolsa}");
-            
-
-
-            
-            
-
-
+            Console.WriteLine(aluno1.bolsista);
+            aluno1.mensalidadeBolsa(aluno1.valorDaMensalidade,aluno1.bolsista);
             
         }
     }
